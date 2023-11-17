@@ -3,7 +3,7 @@ import torch
 from torch import nn
 from torch.nn import TransformerEncoder
 import torch.nn.functional as F
-from layers import MFCC, Attention, LinearNorm, ConvNorm, ConvBlock
+from .layers import MFCC, Attention, LinearNorm, ConvNorm, ConvBlock
 
 def build_model(model_params={}, model_type='asr'):
     model = ASRCNN(**model_params)

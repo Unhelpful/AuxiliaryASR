@@ -12,13 +12,13 @@ from torch import nn
 from PIL import Image
 from tqdm import tqdm
 
-from utils import calc_wer
+from .utils import calc_wer
 
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-from utils import *
+from .utils import *
 
 class Trainer(object):
     def __init__(self,

@@ -19,7 +19,7 @@ from g2p_en import G2p
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
-from text_utils import TextCleaner
+from .text_utils import TextCleaner
 np.random.seed(1)
 random.seed(1)
 DEFAULT_DICT_PATH = osp.join(osp.dirname(__file__), 'word_index_dict.txt')
